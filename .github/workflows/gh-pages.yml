@@ -16,7 +16,5 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Build and deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           mkdocs gh-deploy --force
