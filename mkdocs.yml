@@ -18,6 +18,7 @@ theme:
     - navigation.sections
     - toc.integrate
     - search.suggest
+    - sitemap
   icon:
     repo: fontawesome/brands/github
   font:
@@ -35,7 +36,6 @@ markdown_extensions:
 plugins:
   - search
   - git-revision-date-localized
-  - sitemap
   - minify
 
 extra_javascript:
