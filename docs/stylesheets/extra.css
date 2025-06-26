@@ -1,0 +1,8 @@
+/* Custom styles for Cluster Documentation */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Noto+Sans+Thai&display=swap');
+
+:root {
+  --md-text-font: 'Roboto', 'Noto Sans Thai', sans-serif;
+  --md-code-font: 'Fira Code', monospace;
+}
+
