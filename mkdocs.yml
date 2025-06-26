@@ -1,0 +1,59 @@
+site_name: Cluster Documentation
+site_description: Documentation for normal users and system admins
+site_url: https://example.com/cluster-doc
+repo_url: https://github.com/example/cluster-doc
+
+nav:
+  - Home: index.md
+  - Scripts:
+      - scripts/index.md
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Fira Code
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - sitemap
+  - minify
+
+extra_javascript:
+  - https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-Y
+  - javascripts/analytics.js
+
+extra_templates:
+  - robots.txt
+
+extra:
+  analytics:
+    provider: google
+    property: UA-XXXXXX-Y
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/example/cluster-doc
+
+
+extra_css:
+  - stylesheets/extra.css
+
