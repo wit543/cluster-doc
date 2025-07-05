@@ -627,9 +627,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#viewing-job-priority" class="md-nav__link">
+  <a href="#job-priority" class="md-nav__link">
     <span class="md-ellipsis">
-      Viewing Job Priority
+      Job Priority
     </span>
   </a>
   
@@ -1103,14 +1103,15 @@
 
 <h1 id="monitoring-and-managing-jobs">Monitoring and Managing Jobs<a class="headerlink" href="#monitoring-and-managing-jobs" title="Permanent link">&para;</a></h1>
 <h3 id="viewing-jobs">Viewing Jobs<a class="headerlink" href="#viewing-jobs" title="Permanent link">&para;</a></h3>
-<p>See your queued or running jobs with:</p>
-<div class="codehilite"><pre><span></span><code>squeue<span class="w"> </span>-u<span class="w"> </span><span class="nv">$USER</span>
+<p>See your queued or running jobs with either <code>squeue -u $USER</code> or the shorthand
+<code>squeue --me</code>:</p>
+<div class="codehilite"><pre><span></span><code>squeue<span class="w"> </span>--me
 </code></pre></div>
 
 <p>Add <code>-p &lt;partition&gt;</code> to filter by partition. Refer to the
 <a href="https://slurm.schedmd.com/squeue.html">squeue documentation</a> for more
 options.</p>
-<p>A typical <code>squeue</code> table looks like this:</p>
+<p>The output lists job identifiers, partitions, job names, states, and more:</p>
 <div class="codehilite"><pre><span></span><code> JOBID PARTITION     NAME     USER ST  TIME  NODES NODELIST(REASON)
  1234  general   myjob    alice  R  0:10      1   node01
  1235  general   myjob    alice  PD  0:00      1   (Priority)
@@ -1140,7 +1141,16 @@ options.</p>
 <p>You can cancel all of your jobs with <code>scancel -u $USER</code>. See the
 <a href="https://slurm.schedmd.com/scancel.html">scancel documentation</a> for
 additional usage details.</p>
-<h3 id="viewing-job-priority">Viewing Job Priority<a class="headerlink" href="#viewing-job-priority" title="Permanent link">&para;</a></h3>
+<h3 id="job-priority">Job Priority<a class="headerlink" href="#job-priority" title="Permanent link">&para;</a></h3>
+<p>The scheduler decides which jobs start first based on priority. Display the
+priority of your queued jobs with:</p>
+<div class="codehilite"><pre><span></span><code>squeue<span class="w"> </span>--me<span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;%i %9Q %t %M %j&quot;</span>
+</code></pre></div>
+
+<p><code>%Q</code> shows the numeric priority assigned to each job. Higher values run
+sooner. For a more detailed breakdown of how priority is calculated, use
+<code>sprio</code> and consult the
+<a href="https://slurm.schedmd.com/sprio.html">Slurm scheduling documentation</a>.</p>
 <p>Check a job's priority with:</p>
 <div class="codehilite"><pre><span></span><code>sprio<span class="w"> </span>-j<span class="w"> </span>&lt;jobid&gt;
 </code></pre></div>
@@ -1168,7 +1178,7 @@ See the <a href="https://slurm.schedmd.com/job_prio.html">priority overview</a> 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:23:41 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:27:03 UTC">July 5, 2025</span>
   </span>
 
     
