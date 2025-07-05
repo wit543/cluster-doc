@@ -12,6 +12,7 @@ nav:
       - Environment Setup: slurm/environment.md
       - Submitting Batch Jobs: slurm/batch-jobs.md
       - Running Interactive Jobs: slurm/interactive-jobs.md
+      - Interactive Sessions: slurm/interactive-sessions.md
       - MPI and Multi-node Jobs: slurm/mpi-multinode.md
       - Monitoring and Managing Jobs: slurm/job-management.md
       - Storage and File Systems: slurm/storage.md
