@@ -10,6 +10,7 @@ This repository contains the source for a documentation site built with **MkDocs
 - Additional color schemes including a **Dracula** theme and a **High Contrast** theme for accessibility
 - Floating controls to increase or decrease the font size for easier reading
 - Search with syntax highlighting and code blocks
+- Easy copy button for all code snippets
 
 - Sitemap and `robots.txt` automatically generated
 - Revision date shown for every page
