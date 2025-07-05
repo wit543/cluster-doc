@@ -15,6 +15,7 @@ nav:
       - Interactive Sessions: slurm/interactive-sessions.md
       - MPI and Multi-node Jobs: slurm/mpi-multinode.md
       - Monitoring and Managing Jobs: slurm/job-management.md
+      - Preemption: slurm/preemption.md
       - Storage and File Systems: slurm/storage.md
       - Helpful Commands: slurm/helpful-commands.md
       - Getting Help: slurm/help.md
@@ -27,6 +28,7 @@ nav:
   - Singularity: singularity.md
   - Editors and Tmux: tools/editors-and-tmux.md
   - File Transfer: tools/file-transfer.md
+  - User Registration: user-registration.md
   - SSH Tunneling: tools/ssh-tunneling.md
   - Scripts:
       - scripts/index.md
