@@ -35,6 +35,8 @@ nav:
       - scripts/index.md
       - Convert sinfo output: scripts/sinfo-to-page.md
   - IST-CLUSTER Guide: ist-cluster.md
+  - Admin Guide:
+      - Slurm Setup: admin/slurm-setup.md
 
 theme:
   name: material
