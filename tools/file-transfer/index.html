@@ -20,13 +20,13 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/helpful-commands/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/tools/file-transfer/">
       
       
-        <link rel="prev" href="../storage/">
+        <link rel="prev" href="../editors-and-tmux/">
       
       
-        <link rel="next" href="../help/">
+        <link rel="next" href="../../scripts/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -34,7 +34,7 @@
     
     
       
-        <title>Helpful Commands - Cluster Documentation</title>
+        <title>File Transfer - Cluster Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#helpful-commands" class="md-skip">
+        <a href="#file-transfer-with-rsync-scp-and-rclone" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Helpful Commands
+              File Transfer
             
           </span>
         </div>
@@ -318,8 +318,6 @@
       
   
   
-    
-  
   
   
     
@@ -332,11 +330,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -352,7 +350,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Slurm Basics
@@ -389,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../slurm/overview/" class="md-nav__link">
         
   
   
@@ -412,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing/" class="md-nav__link">
+      <a href="../../slurm/accessing/" class="md-nav__link">
         
   
   
@@ -435,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../environment/" class="md-nav__link">
+      <a href="../../slurm/environment/" class="md-nav__link">
         
   
   
@@ -458,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../batch-jobs/" class="md-nav__link">
+      <a href="../../slurm/batch-jobs/" class="md-nav__link">
         
   
   
@@ -481,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../interactive-jobs/" class="md-nav__link">
+      <a href="../../slurm/interactive-jobs/" class="md-nav__link">
         
   
   
@@ -504,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-management/" class="md-nav__link">
+      <a href="../../slurm/job-management/" class="md-nav__link">
         
   
   
@@ -527,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/" class="md-nav__link">
+      <a href="../../slurm/storage/" class="md-nav__link">
         
   
   
@@ -547,32 +545,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Helpful Commands
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../slurm/helpful-commands/" class="md-nav__link">
         
   
   
@@ -583,44 +559,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#slurm-utilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slurm Utilities
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting Tips
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -633,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../help/" class="md-nav__link">
+      <a href="../../slurm/help/" class="md-nav__link">
         
   
   
@@ -795,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/editors-and-tmux/" class="md-nav__link">
+      <a href="../editors-and-tmux/" class="md-nav__link">
         
   
   
@@ -814,10 +752,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tools/file-transfer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    File Transfer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -828,6 +788,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      rsync
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scp" class="md-nav__link">
+    <span class="md-ellipsis">
+      scp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rclone" class="md-nav__link">
+    <span class="md-ellipsis">
+      rclone
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -924,20 +931,62 @@
   
 
 
-<h1 id="helpful-commands">Helpful Commands<a class="headerlink" href="#helpful-commands" title="Permanent link">&para;</a></h1>
-<h3 id="slurm-utilities">Slurm Utilities<a class="headerlink" href="#slurm-utilities" title="Permanent link">&para;</a></h3>
+<h1 id="file-transfer-with-rsync-scp-and-rclone">File Transfer with <code>rsync</code>, <code>scp</code>, and <code>rclone</code><a class="headerlink" href="#file-transfer-with-rsync-scp-and-rclone" title="Permanent link">&para;</a></h1>
+<p>Transferring files to and from the cluster can be done in several ways. This page covers three common tools and the most useful flags for each.</p>
+<h2 id="rsync"><code>rsync</code><a class="headerlink" href="#rsync" title="Permanent link">&para;</a></h2>
+<p><code>rsync</code> efficiently synchronizes files and directories between locations. The basic syntax is:</p>
+<div class="codehilite"><pre><span></span><code>rsync<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>SOURCE<span class="w"> </span>DESTINATION
+</code></pre></div>
+
+<p>Commonly used flags:</p>
 <ul>
-<li><code>sinfo</code> – view available partitions and nodes</li>
-<li><code>scontrol show job &lt;jobid&gt;</code> – detailed job information</li>
-<li><code>squeue -l</code> – extended job listing</li>
+<li><code>-a</code> &ndash; archive mode; copies directories recursively and preserves permissions, symlinks, and timestamps.</li>
+<li><code>-v</code> &ndash; verbose output showing which files are transferred.</li>
+<li><code>-z</code> &ndash; compress data during the transfer, useful over slow connections.</li>
+<li><code>-h</code> &ndash; output numbers in a human-readable format.</li>
+<li><code>--progress</code> &ndash; display progress during transfer.</li>
+<li><code>--delete</code> &ndash; delete files in the destination that no longer exist in the source.</li>
 </ul>
-<p>Use <code>sinfo</code> frequently to check which partitions are available. The
-official man page provides a full description of its output at
-<a href="https://slurm.schedmd.com/sinfo.html">slurm.schedmd.com/sinfo.html</a>.</p>
-<h3 id="troubleshooting-tips">Troubleshooting Tips<a class="headerlink" href="#troubleshooting-tips" title="Permanent link">&para;</a></h3>
-<p>Check your job's output and error files if it fails to run. The command
-<code>scontrol show job &lt;jobid&gt;</code> often provides clues about resource or
-configuration issues.</p>
+<p>Example: synchronize a local directory to a remote cluster home directory.</p>
+<div class="codehilite"><pre><span></span><code>rsync<span class="w"> </span>-avz<span class="w"> </span>mydata/<span class="w"> </span>username@cluster.example.com:/home/username/mydata/
+</code></pre></div>
+
+<h2 id="scp"><code>scp</code><a class="headerlink" href="#scp" title="Permanent link">&para;</a></h2>
+<p><code>scp</code> copies files over SSH. It works well for one-off transfers of a few files.</p>
+<div class="codehilite"><pre><span></span><code>scp<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>SOURCE<span class="w"> </span>DESTINATION
+</code></pre></div>
+
+<p>Useful flags:</p>
+<ul>
+<li><code>-r</code> &ndash; recursively copy directories.</li>
+<li><code>-P</code> &ndash; specify a remote SSH port if it is not the default (22).</li>
+<li><code>-C</code> &ndash; enable compression.</li>
+<li><code>-p</code> &ndash; preserve modification times and file modes.</li>
+<li><code>-v</code> &ndash; verbose output for debugging connection issues.</li>
+</ul>
+<p>Example: copy a local file to the remote <code>/scratch</code> directory.</p>
+<div class="codehilite"><pre><span></span><code>scp<span class="w"> </span>-C<span class="w"> </span>myfile.txt<span class="w"> </span>username@cluster.example.com:/scratch/username/
+</code></pre></div>
+
+<h2 id="rclone"><code>rclone</code><a class="headerlink" href="#rclone" title="Permanent link">&para;</a></h2>
+<p><code>rclone</code> syncs files to and from many cloud storage providers and remote systems. Install it on your workstation first.</p>
+<div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span><span class="o">[</span>command<span class="o">]</span><span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>SOURCE<span class="w"> </span>DESTINATION
+</code></pre></div>
+
+<p>Important flags and commands:</p>
+<ul>
+<li><code>config</code> &ndash; interactively set up or edit a remote configuration.</li>
+<li><code>copy</code> &ndash; copy files from source to destination, skipping identical files.</li>
+<li><code>sync</code> &ndash; make destination identical to source by copying new files and deleting missing ones.</li>
+<li><code>-P</code> or <code>--progress</code> &ndash; show progress during transfers.</li>
+<li><code>--dry-run</code> &ndash; perform a trial run with no changes made; use to verify commands.</li>
+<li><code>--bwlimit RATE</code> &ndash; limit bandwidth usage (e.g., <code>--bwlimit 10M</code>).</li>
+</ul>
+<p>Example: sync a directory from the cluster to Google Drive.</p>
+<div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>sync<span class="w"> </span>/home/username/data<span class="w"> </span>gdrive:cluster-backup<span class="w"> </span>-P
+</code></pre></div>
+
+<p>These tools cover most file transfer needs. <code>rsync</code> is ideal for incremental backups, <code>scp</code> is quick for small copies, and <code>rclone</code> connects to numerous cloud services.</p>
 
 
 
@@ -958,7 +1007,7 @@ configuration issues.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:40:09 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:03:59 UTC">July 5, 2025</span>
   </span>
 
     
