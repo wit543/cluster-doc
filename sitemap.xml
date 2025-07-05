@@ -16,4 +16,40 @@
          <loc>https://example.com/cluster-doc/scripts/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/accessing/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/batch-jobs/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/environment/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/help/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/helpful-commands/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/interactive-jobs/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/job-management/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/overview/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/cluster-doc/slurm/storage/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
 </urlset>
