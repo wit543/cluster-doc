@@ -2,19 +2,38 @@ name: Deploy MkDocs
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+
+# grant the bot write access to code & pages
+permissions:
+  contents: write
+  pages: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          # fetch full history to fix shallow‐clone warnings
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-      - name: Build and deploy
-        run: |
-          mkdocs gh-deploy --force
+        run: pip install -r requirements.txt mkdocs
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        # ensure the token is available to mkdocs/ghp_import
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force
