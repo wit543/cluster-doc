@@ -23,6 +23,7 @@ nav:
   - Apptainer: apptainer.md
   - Singularity: singularity.md
   - Editors and Tmux: tools/editors-and-tmux.md
+  - File Transfer: tools/file-transfer.md
   - Scripts:
       - scripts/index.md
 
