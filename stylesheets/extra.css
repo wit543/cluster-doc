@@ -50,3 +50,17 @@ html[data-font-size="xlarge"] {
   font-size: 1rem;
 }
 
+
+/* QOS table container */
+.qos-data-container {
+  margin-top: 1rem;
+  border: 1px solid var(--md-default-fg-color);
+  background: var(--md-code-bg-color, #f5f5f5);
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.qos-data-container pre {
+  margin: 0;
+  font-family: var(--md-code-font);
+}
