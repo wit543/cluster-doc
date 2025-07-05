@@ -51,3 +51,12 @@ GitHub Actions builds the site and deploys it to the `gh-pages` branch which can
 
 No personal data is collected by default. If analytics are enabled, ensure you comply with your organization's privacy policy and relevant regulations.
 
+## Security
+
+Follow best practices when using the cluster:
+
+- Use strong SSH keys and keep them private.
+- Never share your account or run unauthorized services.
+- Review the [HPC usage policy](https://example.com/hpc-policy) referenced in the documentation.
+- Report vulnerabilities by following the instructions in [SECURITY.md](SECURITY.md).
+
