@@ -7,6 +7,7 @@ commands.
 - [Overview](slurm/overview.md)
 - [Accessing the Cluster](slurm/accessing.md)
 - [Environment Setup](slurm/environment.md)
+- [Mamba/Anaconda Environments](slurm/mamba-anaconda.md)
 - [Submitting Batch Jobs](slurm/batch-jobs.md)
 - [Running Interactive Jobs](slurm/interactive-jobs.md)
 - [Monitoring and Managing Jobs](slurm/job-management.md)
