@@ -5,6 +5,7 @@ repo_url: https://github.com/example/cluster-doc
 
 nav:
   - Home: index.md
+  - Slurm Basics: slurm-basics.md
   - Scripts:
       - scripts/index.md
 
