@@ -7,6 +7,9 @@ nav:
   - Home: index.md
   - Slurm Basics: slurm-basics.md
   - IST-CLUSTER Guide: ist-cluster.md
+  - Using Modules: modules.md
+  - Apptainer: apptainer.md
+  - Singularity: singularity.md
   - Scripts:
       - scripts/index.md
 
