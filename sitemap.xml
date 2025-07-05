@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/cluster-doc/</loc>
+         <loc>https://wit543.github.io/cluster-doc/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/ist-cluster/</loc>
+         <loc>https://wit543.github.io/cluster-doc/ist-cluster/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm-basics/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm-basics/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/scripts/</loc>
+         <loc>https://wit543.github.io/cluster-doc/scripts/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/accessing/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/accessing/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/batch-jobs/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/batch-jobs/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/environment/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/environment/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/help/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/help/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/helpful-commands/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/helpful-commands/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/interactive-jobs/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/interactive-jobs/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/job-management/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/job-management/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/overview/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/overview/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
-         <loc>https://example.com/cluster-doc/slurm/storage/</loc>
+         <loc>https://wit543.github.io/cluster-doc/slurm/storage/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
 </urlset>
