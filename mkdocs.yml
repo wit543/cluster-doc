@@ -5,6 +5,7 @@ repo_url: https://github.com/wit543/cluster-doc
 
 nav:
   - Home: index.md
+  - Linux Basics: linux-basics.md
   - Slurm Basics: slurm-basics.md
   - IST-CLUSTER Guide: ist-cluster.md
   - Scripts:
