@@ -20,13 +20,13 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/helpful-commands/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/tools/ssh-tunneling/">
       
       
-        <link rel="prev" href="../storage/">
+        <link rel="prev" href="../file-transfer/">
       
       
-        <link rel="next" href="../help/">
+        <link rel="next" href="../../scripts/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -34,7 +34,7 @@
     
     
       
-        <title>Helpful Commands - Cluster Documentation</title>
+        <title>SSH Tunneling - Cluster Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#helpful-commands" class="md-skip">
+        <a href="#accessing-web-applications-and-x11" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Helpful Commands
+              SSH Tunneling
             
           </span>
         </div>
@@ -318,8 +318,6 @@
       
   
   
-    
-  
   
   
     
@@ -332,11 +330,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -352,7 +350,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Slurm Basics
@@ -389,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../slurm/overview/" class="md-nav__link">
         
   
   
@@ -412,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing/" class="md-nav__link">
+      <a href="../../slurm/accessing/" class="md-nav__link">
         
   
   
@@ -435,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../environment/" class="md-nav__link">
+      <a href="../../slurm/environment/" class="md-nav__link">
         
   
   
@@ -458,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../batch-jobs/" class="md-nav__link">
+      <a href="../../slurm/batch-jobs/" class="md-nav__link">
         
   
   
@@ -481,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../interactive-jobs/" class="md-nav__link">
+      <a href="../../slurm/interactive-jobs/" class="md-nav__link">
         
   
   
@@ -504,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mpi-multinode/" class="md-nav__link">
+      <a href="../../slurm/mpi-multinode/" class="md-nav__link">
         
   
   
@@ -527,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-management/" class="md-nav__link">
+      <a href="../../slurm/job-management/" class="md-nav__link">
         
   
   
@@ -550,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/" class="md-nav__link">
+      <a href="../../slurm/storage/" class="md-nav__link">
         
   
   
@@ -570,32 +568,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Helpful Commands
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../slurm/helpful-commands/" class="md-nav__link">
         
   
   
@@ -606,44 +582,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#slurm-utilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slurm Utilities
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting Tips
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -656,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../help/" class="md-nav__link">
+      <a href="../../slurm/help/" class="md-nav__link">
         
   
   
@@ -818,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/editors-and-tmux/" class="md-nav__link">
+      <a href="../editors-and-tmux/" class="md-nav__link">
         
   
   
@@ -840,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/file-transfer/" class="md-nav__link">
+      <a href="../file-transfer/" class="md-nav__link">
         
   
   
@@ -859,10 +797,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tools/ssh-tunneling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SSH Tunneling
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -873,6 +833,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forwarding-web-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forwarding Web Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x11-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      X11 Forwarding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-tunnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverse Tunnels
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -969,20 +976,51 @@
   
 
 
-<h1 id="helpful-commands">Helpful Commands<a class="headerlink" href="#helpful-commands" title="Permanent link">&para;</a></h1>
-<h3 id="slurm-utilities">Slurm Utilities<a class="headerlink" href="#slurm-utilities" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>sinfo</code> – view available partitions and nodes</li>
-<li><code>scontrol show job &lt;jobid&gt;</code> – detailed job information</li>
-<li><code>squeue -l</code> – extended job listing</li>
-</ul>
-<p>Use <code>sinfo</code> frequently to check which partitions are available. The
-official man page provides a full description of its output at
-<a href="https://slurm.schedmd.com/sinfo.html">slurm.schedmd.com/sinfo.html</a>.</p>
-<h3 id="troubleshooting-tips">Troubleshooting Tips<a class="headerlink" href="#troubleshooting-tips" title="Permanent link">&para;</a></h3>
-<p>Check your job's output and error files if it fails to run. The command
-<code>scontrol show job &lt;jobid&gt;</code> often provides clues about resource or
-configuration issues.</p>
+<h1 id="accessing-web-applications-and-x11">Accessing Web Applications and X11<a class="headerlink" href="#accessing-web-applications-and-x11" title="Permanent link">&para;</a></h1>
+<p>Running graphical applications or web interfaces on a compute node often
+requires forwarding network connections through the login node. SSH tunnels make
+this possible without opening additional firewall ports.</p>
+<h2 id="forwarding-web-applications">Forwarding Web Applications<a class="headerlink" href="#forwarding-web-applications" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Start an interactive job and note the compute node name:
+   <code>bash
+   salloc --partition=general --time=2:00:00 --nodes=1 --cpus-per-task=2</code>
+   After the job begins you will land on a node such as <code>compute001</code>.</li>
+<li>Launch your application on that node. For Jupyter Lab:
+   <code>bash
+   jupyter lab --no-browser --ip=0.0.0.0 --port=8888</code></li>
+<li>From your local machine open a second terminal and create an SSH tunnel
+   through the login node, replacing the host name with the one from step 1:
+   <code>bash
+   ssh -L 8888:compute001:8888 &lt;user&gt;@login.cluster.example.com</code>
+   Point your web browser to <code>http://localhost:8888</code>. Use a different local port
+   if 8888 is already in use.</li>
+</ol>
+<h2 id="x11-forwarding">X11 Forwarding<a class="headerlink" href="#x11-forwarding" title="Permanent link">&para;</a></h2>
+<p>X11 lets you run graphical programs on the cluster while displaying them on your
+own computer. You need an X server installed locally (XQuartz on macOS, VcXsrv
+or Xming on Windows, or just X11 on Linux).</p>
+<ol>
+<li>Connect to the compute node with X forwarding enabled and jumping through the
+   login node:
+   <code>bash
+   ssh -X -J &lt;user&gt;@login.cluster.example.com &lt;user&gt;@compute001</code></li>
+<li>Start a program like <code>xterm</code> or <code>xclock</code>. The window should appear on your
+   desktop.</li>
+</ol>
+<h2 id="reverse-tunnels">Reverse Tunnels<a class="headerlink" href="#reverse-tunnels" title="Permanent link">&para;</a></h2>
+<p>When direct forwarding from the login node to the compute node is not permitted,
+you can create a reverse tunnel from the compute node back to the login node:</p>
+<div class="codehilite"><pre><span></span><code>ssh<span class="w"> </span>-R<span class="w"> </span><span class="m">8888</span>:localhost:8888<span class="w"> </span>&lt;user&gt;@login.cluster.example.com
+</code></pre></div>
+
+<p>After this command, connect from your local machine to the login node as
+follows:</p>
+<div class="codehilite"><pre><span></span><code>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">8888</span>:localhost:8888<span class="w"> </span>&lt;user&gt;@login.cluster.example.com
+</code></pre></div>
+
+<p>This sends traffic from your web browser through the login node to the compute
+node running the application.</p>
 
 
 
@@ -1003,7 +1041,7 @@ configuration issues.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:40:09 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:09:35 UTC">July 5, 2025</span>
   </span>
 
     
