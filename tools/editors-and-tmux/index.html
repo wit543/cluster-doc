@@ -20,9 +20,13 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/interactive-jobs/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/tools/editors-and-tmux/">
       
       
+        <link rel="prev" href="../../singularity/">
+      
+      
+        <link rel="next" href="../../scripts/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -30,7 +34,7 @@
     
     
       
-        <title>Running Interactive Jobs - Cluster Documentation</title>
+        <title>Editors and Tmux - Cluster Documentation</title>
       
     
     
@@ -91,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#running-interactive-jobs" class="md-skip">
+        <a href="#text-editors-and-tmux" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Running Interactive Jobs
+              Editors and Tmux
             
           </span>
         </div>
@@ -446,10 +450,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tools/editors-and-tmux/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Editors and Tmux
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -460,6 +486,188 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nano
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nano">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useful-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenario-quick-config-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenario: Quick Config Edit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vim
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-around" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moving Around
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intermediate-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intermediate Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Techniques
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenario-editing-job-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenario: Editing Job Scripts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tmux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tmux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Out
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-windows-and-panes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Windows and Panes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenario-long-running-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenario: Long-Running Jobs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -556,25 +764,89 @@
   
 
 
-<h1 id="running-interactive-jobs">Running Interactive Jobs<a class="headerlink" href="#running-interactive-jobs" title="Permanent link">&para;</a></h1>
-<p>Interactive sessions are useful for debugging or running short tasks.</p>
-<h3 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h3>
-<p>Request an interactive shell with:</p>
-<div class="codehilite"><pre><span></span><code>srun<span class="w"> </span>--pty<span class="w"> </span>bash
+<h1 id="text-editors-and-tmux">Text Editors and Tmux<a class="headerlink" href="#text-editors-and-tmux" title="Permanent link">&para;</a></h1>
+<p>This guide introduces three common terminal tools used on most Linux clusters: <strong>nano</strong>, <strong>vim</strong>, and <strong>tmux</strong>. Each section starts with the basics and moves on to more advanced usage.</p>
+<h2 id="nano">Nano<a class="headerlink" href="#nano" title="Permanent link">&para;</a></h2>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Launch nano with <code>nano filename</code></li>
+<li>The shortcuts are listed at the bottom of the screen. Use <code>Ctrl+X</code> to exit, <code>Ctrl+O</code> to save.</li>
+</ul>
+<h3 id="useful-features">Useful Features<a class="headerlink" href="#useful-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Ctrl+W</code> to search within the file</li>
+<li><code>Alt+\</code> to jump to the beginning and <code>Alt+/</code> to jump to the end</li>
+<li>Enable syntax highlighting with <code>nano -Y &lt;language&gt;</code> if available</li>
+</ul>
+<h3 id="example-scenario-quick-config-edit">Example Scenario: Quick Config Edit<a class="headerlink" href="#example-scenario-quick-config-edit" title="Permanent link">&para;</a></h3>
+<p>Nano is ideal for small, quick edits when you are unfamiliar with other editors. Run:</p>
+<div class="codehilite"><pre><span></span><code>nano<span class="w"> </span>~/.bashrc
 </code></pre></div>
 
-<p>Specify resources such as the partition, CPUs, or runtime to avoid using
-defaults that may not suit your workload:</p>
-<div class="codehilite"><pre><span></span><code>srun<span class="w"> </span>--partition<span class="o">=</span>general<span class="w"> </span>--time<span class="o">=</span><span class="m">30</span>:00<span class="w"> </span>--cpus-per-task<span class="o">=</span><span class="m">4</span><span class="w"> </span>--pty<span class="w"> </span>bash
+<p>Edit the file, press <code>Ctrl+O</code> to write out, then <code>Ctrl+X</code> to quit.</p>
+<h2 id="vim">Vim<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h2>
+<h3 id="basic-commands">Basic Commands<a class="headerlink" href="#basic-commands" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>i</code> enters insert mode so you can type</li>
+<li><code>Esc</code> returns to normal mode</li>
+<li><code>:w</code> saves the file, <code>:q</code> quits, and <code>:wq</code> saves then quits</li>
+</ul>
+<h3 id="moving-around">Moving Around<a class="headerlink" href="#moving-around" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use arrow keys or <code>h j k l</code> to move the cursor</li>
+<li><code>gg</code> jumps to the top, <code>G</code> jumps to the bottom</li>
+<li><code>/pattern</code> searches forward, <code>n</code> repeats the search</li>
+</ul>
+<h3 id="intermediate-usage">Intermediate Usage<a class="headerlink" href="#intermediate-usage" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Copy (<code>y</code>) and paste (<code>p</code>) lines or selections</li>
+<li>Undo with <code>u</code>, redo with <code>Ctrl+r</code></li>
+<li>Split the window with <code>:split</code> or <code>:vsplit</code></li>
+</ul>
+<h3 id="advanced-techniques">Advanced Techniques<a class="headerlink" href="#advanced-techniques" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Record macros with <code>q</code> followed by a register, replay with <code>@</code></li>
+<li>Use visual block mode with <code>Ctrl+v</code> for column edits</li>
+<li>Combine commands like <code>:%s/old/new/g</code> for substitutions</li>
+</ul>
+<h3 id="example-scenario-editing-job-scripts">Example Scenario: Editing Job Scripts<a class="headerlink" href="#example-scenario-editing-job-scripts" title="Permanent link">&para;</a></h3>
+<p>When writing Slurm scripts, vim's syntax highlighting and powerful search make it easy to modify multiple lines. Open a script with:</p>
+<div class="codehilite"><pre><span></span><code>vim<span class="w"> </span>submit.sh
 </code></pre></div>
 
-<h3 id="requesting-gpus">Requesting GPUs<a class="headerlink" href="#requesting-gpus" title="Permanent link">&para;</a></h3>
-<p>To run on a GPU, ask for the resource explicitly:</p>
-<div class="codehilite"><pre><span></span><code>srun<span class="w"> </span>--gres<span class="o">=</span>gpu:1<span class="w"> </span>--pty<span class="w"> </span>bash
+<p>Use search and replace to update module names quickly:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">:</span>%s<span class="sr">/moduleA/</span>moduleB/<span class="k">g</span>
 </code></pre></div>
 
-<p>Add other options such as memory or time limits as needed. More examples
-are available in the <a href="https://slurm.schedmd.com/srun.html">srun documentation</a>.</p>
+<h2 id="tmux">Tmux<a class="headerlink" href="#tmux" title="Permanent link">&para;</a></h2>
+<h3 id="starting-out">Starting Out<a class="headerlink" href="#starting-out" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Launch a new session with <code>tmux</code></li>
+<li>Detach from the session using <code>Ctrl+b</code> then <code>d</code></li>
+<li>Reattach with <code>tmux attach</code></li>
+</ul>
+<h3 id="managing-windows-and-panes">Managing Windows and Panes<a class="headerlink" href="#managing-windows-and-panes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Create a new window with <code>Ctrl+b</code> then <code>c</code></li>
+<li>Split horizontally with <code>Ctrl+b</code> then <code>"</code></li>
+<li>Split vertically with <code>Ctrl+b</code> then <code>%</code></li>
+<li>Switch panes using <code>Ctrl+b</code> then arrow keys</li>
+</ul>
+<h3 id="session-management">Session Management<a class="headerlink" href="#session-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li>List sessions with <code>tmux ls</code></li>
+<li>Create named sessions: <code>tmux new -s mysession</code></li>
+<li>Attach to a named session: <code>tmux attach -t mysession</code></li>
+</ul>
+<h3 id="example-scenario-long-running-jobs">Example Scenario: Long-Running Jobs<a class="headerlink" href="#example-scenario-long-running-jobs" title="Permanent link">&para;</a></h3>
+<p>Use tmux to keep an interactive session alive while monitoring a job:</p>
+<div class="codehilite"><pre><span></span><code>tmux<span class="w"> </span>new<span class="w"> </span>-s<span class="w"> </span>monitor
+watch<span class="w"> </span>-n<span class="w"> </span><span class="m">30</span><span class="w"> </span>squeue<span class="w"> </span>-u<span class="w"> </span><span class="nv">$USER</span>
+</code></pre></div>
+
+<p>Detach with <code>Ctrl+b</code> then <code>d</code> and reattach later with <code>tmux attach -t monitor</code>.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>Nano is great for quick edits, vim offers powerful editing capabilities, and tmux lets you persist terminal sessions. Learning these tools will significantly improve your efficiency on the cluster.</p>
 
 
 
@@ -595,7 +867,7 @@ are available in the <a href="https://slurm.schedmd.com/srun.html">srun document
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:40:09 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:58:45 UTC">July 5, 2025</span>
   </span>
 
     
