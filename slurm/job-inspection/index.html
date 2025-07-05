@@ -20,13 +20,13 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/help/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/job-inspection/">
       
       
-        <link rel="prev" href="../helpful-commands/">
+        <link rel="prev" href="../job-management/">
       
       
-        <link rel="next" href="../qos-policy/">
+        <link rel="next" href="../preemption/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -34,7 +34,7 @@
     
     
       
-        <title>Getting Help - Cluster Documentation</title>
+        <title>Inspecting Job Output - Cluster Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-help" class="md-skip">
+        <a href="#inspecting-job-output-and-status" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Help
+              Inspecting Job Output
             
           </span>
         </div>
@@ -570,10 +570,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../job-inspection/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Inspecting Job Output
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -584,6 +606,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#output-and-error-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output and Error Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scontrol-for-active-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      scontrol for Active Jobs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sacct-for-finished-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      sacct for Finished Jobs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sacctmgr-for-account-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      sacctmgr for Account Managers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sacctmgr for Account Managers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-each-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Each Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -662,32 +755,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Getting Help
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../help/" class="md-nav__link">
         
   
   
@@ -698,44 +769,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contact-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contact Support
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1106,20 +1139,48 @@
   
 
 
-<h1 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h1>
-<h3 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h3>
-<p>Slurm provides extensive manual pages. For example:</p>
-<div class="codehilite"><pre><span></span><code>man<span class="w"> </span>sbatch
+<h1 id="inspecting-job-output-and-status">Inspecting Job Output and Status<a class="headerlink" href="#inspecting-job-output-and-status" title="Permanent link">&para;</a></h1>
+<p>When a Slurm job does not behave as expected, you can investigate it in several ways. Start with the log files produced by your job script and then consult Slurm utilities for more details.</p>
+<h2 id="output-and-error-files">Output and Error Files<a class="headerlink" href="#output-and-error-files" title="Permanent link">&para;</a></h2>
+<p>By default <code>sbatch</code> writes both standard output and standard error to <code>slurm-&lt;jobid&gt;.out</code>. You can change this in your job script using <code>#SBATCH --output</code> and <code>#SBATCH --error</code> directives:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">#SBATCH --output=myjob.out</span>
+<span class="c1">#SBATCH --error=myjob.err</span>
 </code></pre></div>
 
-<p>You can view help for most commands with the <code>--help</code> flag, and the
-official documentation is available online at
-<a href="https://slurm.schedmd.com/documentation.html">https://slurm.schedmd.com/documentation.html</a>.</p>
-<p>Additional guides may be found on the cluster website.</p>
-<h3 id="contact-support">Contact Support<a class="headerlink" href="#contact-support" title="Permanent link">&para;</a></h3>
-<p>If you encounter problems, email <code>cluster-support@example.com</code> or open a
-support ticket through the service portal. Include your job ID and any
-error messages to help staff diagnose the issue.</p>
+<p>Check these files first when something goes wrong. They contain all messages printed by your job and many common application errors.</p>
+<h2 id="scontrol-for-active-jobs"><code>scontrol</code> for Active Jobs<a class="headerlink" href="#scontrol-for-active-jobs" title="Permanent link">&para;</a></h2>
+<p>While a job is queued or running, <code>scontrol show job &lt;jobid&gt;</code> displays detailed information such as allocated nodes, memory, and current state. This is useful for confirming that your requested resources were granted.</p>
+<p><strong>Pros</strong>
+- Real-time view of the job as it runs
+- Shows reasons why a job is pending</p>
+<p><strong>Cons</strong>
+- Information disappears after the job record is purged</p>
+<h2 id="sacct-for-finished-jobs"><code>sacct</code> for Finished Jobs<a class="headerlink" href="#sacct-for-finished-jobs" title="Permanent link">&para;</a></h2>
+<p>After completion, use <code>sacct -j &lt;jobid&gt;</code> to view accounting data including elapsed time, memory usage, and exit code.</p>
+<p><strong>Pros</strong>
+- Summarizes resource usage and final state
+- Works even after the job has finished</p>
+<p><strong>Cons</strong>
+- Limited to stored accounting fields; does not show live details</p>
+<h2 id="sacctmgr-for-account-managers"><code>sacctmgr</code> for Account Managers<a class="headerlink" href="#sacctmgr-for-account-managers" title="Permanent link">&para;</a></h2>
+<p>Administrators can query the accounting database directly with <code>sacctmgr</code>. Typical users may not have permission, but the command can reveal project and QOS settings when enabled:</p>
+<div class="codehilite"><pre><span></span><code>sacctmgr<span class="w"> </span>show<span class="w"> </span>job<span class="w"> </span>&lt;jobid&gt;
+</code></pre></div>
+
+<p><strong>Pros</strong>
+- Provides authoritative records from the accounting database
+- Useful for auditing and troubleshooting complex issues</p>
+<p><strong>Cons</strong>
+- Often restricted to admin roles
+- More verbose and slower than <code>sacct</code></p>
+<h3 id="when-to-use-each-tool">When to Use Each Tool<a class="headerlink" href="#when-to-use-each-tool" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Output/error files</strong> – first place to look for program messages and errors.</li>
+<li><strong><code>scontrol</code></strong> – check a running or pending job's configuration and allocation.</li>
+<li><strong><code>sacct</code></strong> – review statistics and exit status after the job ends.</li>
+<li><strong><code>sacctmgr</code></strong> – administrative view for historical or policy-related data.</li>
+</ol>
+<p>Use them together to diagnose problems: start with the logs, inspect the active job with <code>scontrol</code>, and consult <code>sacct</code> or <code>sacctmgr</code> for post-run details.</p>
 
 
 
@@ -1140,7 +1201,7 @@ error messages to help staff diagnose the issue.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:40:09 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:35:41 UTC">July 5, 2025</span>
   </span>
 
     
