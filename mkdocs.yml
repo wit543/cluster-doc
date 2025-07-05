@@ -5,11 +5,20 @@ repo_url: https://github.com/wit543/cluster-doc
 
 nav:
   - Home: index.md
-  - Slurm Basics:
-      - slurm-basics.md
+  - Getting Started:
+      - Linux Basics: linux-basics.md
+      - Using Modules: modules.md
+      - User Registration: user-registration.md
+  - Tools:
+      - File Transfer: tools/file-transfer.md
+      - SSH Tunneling: tools/ssh-tunneling.md
+      - Editors and Tmux: tools/editors-and-tmux.md
+  - Cluster Guide:
+      - Slurm Quick Start: slurm-basics.md
       - Overview: slurm/overview.md
       - Accessing the Cluster: slurm/accessing.md
       - Environment Setup: slurm/environment.md
+      - Mamba/Anaconda: slurm/mamba-anaconda.md
       - Submitting Batch Jobs: slurm/batch-jobs.md
       - Running Interactive Jobs: slurm/interactive-jobs.md
       - Interactive Sessions: slurm/interactive-sessions.md
@@ -21,19 +30,11 @@ nav:
       - Helpful Commands: slurm/helpful-commands.md
       - Getting Help: slurm/help.md
       - QOS Policy: slurm/qos-policy.md
-  - Linux Basics: linux-basics.md
-  - Slurm Basics: slurm-basics.md
-  - IST-CLUSTER Guide: ist-cluster.md
-  - Using Modules: modules.md
-  - Apptainer: apptainer.md
-  - Singularity: singularity.md
-  - Editors and Tmux: tools/editors-and-tmux.md
-  - File Transfer: tools/file-transfer.md
-  - User Registration: user-registration.md
-  - SSH Tunneling: tools/ssh-tunneling.md
+  - Containers: containers.md
   - Scripts:
       - scripts/index.md
       - Convert sinfo output: scripts/sinfo-to-page.md
+  - IST-CLUSTER Guide: ist-cluster.md
 
 theme:
   name: material
