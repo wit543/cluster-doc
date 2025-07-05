@@ -15,7 +15,7 @@ This repository contains the source for a documentation site built with **MkDocs
 - Sitemap and `robots.txt` automatically generated
 - Revision date shown for every page
 - Optional analytics hook
-  (update the tracking ID in `mkdocs.yml` to enable)
+  (set the Google Analytics property in `mkdocs.yml` to enable)
 
 ## Local Development
 
