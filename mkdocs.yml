@@ -6,6 +6,7 @@ repo_url: https://github.com/example/cluster-doc
 nav:
   - Home: index.md
   - Slurm Basics: slurm-basics.md
+  - IST-CLUSTER Guide: ist-cluster.md
   - Scripts:
       - scripts/index.md
 
