@@ -11,6 +11,7 @@ commands.
 - [Submitting Batch Jobs](slurm/batch-jobs.md)
 - [Running Interactive Jobs](slurm/interactive-jobs.md)
 - [Monitoring and Managing Jobs](slurm/job-management.md)
+- [Inspecting Job Output](slurm/job-inspection.md)
 - [Storage and File Systems](slurm/storage.md)
 - [Helpful Commands](slurm/helpful-commands.md)
 - [Getting Help](slurm/help.md)
