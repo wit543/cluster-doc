@@ -1,0 +1,48 @@
+# IST-CLUSTER Documentation
+
+The following topics are covered in the IST-CLUSTER user guide:
+
+- Introduction to IST-CLUSTER
+- Quick Start Guide
+- Getting access to IST-CLUSTER
+- Getting started
+- IST-CLUSTER overview
+- Login to IST-CLUSTER
+- Running your first job
+- Manage your jobs
+- Checking spent SHr in jobs
+- Storage quota
+- File transfer
+- Software environment
+- Software installation guideline
+- Application Software
+- AI, Machine learning, and Deep learning
+- Bioinformatics
+- Chemistry
+- Climate and Weather
+- Compiler and Toolchain
+- Computer-Aided Engineering (CAE)
+- Container (Apptainer/Singularity)
+- Programming language (R, Python, Perl)
+- การขอสิทธิ์การเข้าถึง software
+- PI e-service
+- Adding New Team Member
+- Requesting for Service Node-Hour (SHr)
+- Requesting for Project Home Storage Expansion
+- Requesting for Extend Project Duration
+- Training
+- Upcoming workshop
+- All training materials
+- Update Notice
+- Recent update (June/2025)
+- ThaiSC support service
+- Send a support ticket to thaisc-support@nstda.or.th
+- Guideline for submitting a ticket
+- Scope of technical support
+- FAQ
+- Incorrect storage quota
+- Job is pending with "ReqNodeNotAvail, Reserved for maintenance"
+- Mamba cannot connect to the internet with the error of [Errno 101] Network is unreachable
+- Migrating from Miniconda to Mamba
+- Usage policy
+- IST-CLUSTER Frontend usage policy
