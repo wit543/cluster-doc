@@ -5,6 +5,7 @@ repo_url: https://github.com/example/cluster-doc
 
 nav:
   - Home: index.md
+  - Slurm Basics: slurm-basics.md
   - Scripts:
       - scripts/index.md
 
@@ -15,7 +16,6 @@ theme:
   favicon: images/favicon.png
   language: en
   features:
-    - navigation.tabs
     - navigation.sections
     - toc.integrate
     - search.suggest
