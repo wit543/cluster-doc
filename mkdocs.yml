@@ -16,6 +16,7 @@ nav:
       - Storage and File Systems: slurm/storage.md
       - Helpful Commands: slurm/helpful-commands.md
       - Getting Help: slurm/help.md
+      - QOS Policy: slurm/qos-policy.md
   - Linux Basics: linux-basics.md
   - Slurm Basics: slurm-basics.md
   - IST-CLUSTER Guide: ist-cluster.md
@@ -85,6 +86,7 @@ plugins:
 
 extra_javascript:
   - javascripts/accessibility.js
+  - javascripts/load-qos.js
 
 extra_templates:
   - robots.txt
