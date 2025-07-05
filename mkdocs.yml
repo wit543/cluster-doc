@@ -15,7 +15,6 @@ theme:
   favicon: images/favicon.png
   language: en
   features:
-    - navigation.tabs
     - navigation.sections
     - toc.integrate
     - search.suggest
