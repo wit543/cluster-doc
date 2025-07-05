@@ -34,5 +34,8 @@ source ~/envs/myenv/bin/activate
 
 Install packages as needed in the activated environment.
 
+For a Conda-based workflow using Mamba or Anaconda, see
+[Mamba/Anaconda Environments](mamba-anaconda.md).
+
 See the [Lmod documentation](https://lmod.readthedocs.io/en/latest/) for
 more module commands and examples.
