@@ -20,13 +20,13 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/ist-cluster/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/modules/">
       
       
-        <link rel="prev" href="../slurm-basics/">
+        <link rel="prev" href="../ist-cluster/">
       
       
-        <link rel="next" href="../modules/">
+        <link rel="next" href="../apptainer/">
       
       
       <link rel="icon" href="../images/favicon.png">
@@ -34,7 +34,7 @@
     
     
       
-        <title>IST-CLUSTER Guide - Cluster Documentation</title>
+        <title>Using Modules - Cluster Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ist-cluster-documentation" class="md-skip">
+        <a href="#using-modules" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IST-CLUSTER Guide
+              Using Modules
             
           </span>
         </div>
@@ -340,6 +340,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../ist-cluster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IST-CLUSTER Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -352,30 +374,20 @@
         
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   
   <span class="md-ellipsis">
-    IST-CLUSTER Guide
+    Using Modules
     
   </span>
   
 
-      </a>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -386,6 +398,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#listing-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listing Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loading-a-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loading a Module
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-the-module-system-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking the Module System Version
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -526,54 +585,33 @@
   
 
 
-<h1 id="ist-cluster-documentation">IST-CLUSTER Documentation<a class="headerlink" href="#ist-cluster-documentation" title="Permanent link">&para;</a></h1>
-<p>The following topics are covered in the IST-CLUSTER user guide:</p>
-<ul>
-<li>Introduction to IST-CLUSTER</li>
-<li>Quick Start Guide</li>
-<li>Getting access to IST-CLUSTER</li>
-<li>Getting started</li>
-<li>IST-CLUSTER overview</li>
-<li>Login to IST-CLUSTER</li>
-<li>Running your first job</li>
-<li>Manage your jobs</li>
-<li>Checking spent SHr in jobs</li>
-<li>Storage quota</li>
-<li>File transfer</li>
-<li>Software environment</li>
-<li>Software installation guideline</li>
-<li>Application Software</li>
-<li>AI, Machine learning, and Deep learning</li>
-<li>Bioinformatics</li>
-<li>Chemistry</li>
-<li>Climate and Weather</li>
-<li>Compiler and Toolchain</li>
-<li>Computer-Aided Engineering (CAE)</li>
-<li>Container (Apptainer/Singularity)</li>
-<li>Programming language (R, Python, Perl)</li>
-<li>การขอสิทธิ์การเข้าถึง software</li>
-<li>PI e-service</li>
-<li>Adding New Team Member</li>
-<li>Requesting for Service Node-Hour (SHr)</li>
-<li>Requesting for Project Home Storage Expansion</li>
-<li>Requesting for Extend Project Duration</li>
-<li>Training</li>
-<li>Upcoming workshop</li>
-<li>All training materials</li>
-<li>Update Notice</li>
-<li>Recent update (June/2025)</li>
-<li>ThaiSC support service</li>
-<li>Send a support ticket to thaisc-support@nstda.or.th</li>
-<li>Guideline for submitting a ticket</li>
-<li>Scope of technical support</li>
-<li>FAQ</li>
-<li>Incorrect storage quota</li>
-<li>Job is pending with "ReqNodeNotAvail, Reserved for maintenance"</li>
-<li>Mamba cannot connect to the internet with the error of [Errno 101] Network is unreachable</li>
-<li>Migrating from Miniconda to Mamba</li>
-<li>Usage policy</li>
-<li>IST-CLUSTER Frontend usage policy</li>
-</ul>
+<h1 id="using-modules">Using Modules<a class="headerlink" href="#using-modules" title="Permanent link">&para;</a></h1>
+<p>Environment modules allow you to easily switch between different versions of software on the cluster. The module command is provided by Lmod.</p>
+<h3 id="listing-modules">Listing Modules<a class="headerlink" href="#listing-modules" title="Permanent link">&para;</a></h3>
+<p>View everything that is available:</p>
+<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>avail
+</code></pre></div>
+
+<p>If you are looking for a particular package, search by name:</p>
+<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>spider<span class="w"> </span>&lt;package&gt;
+</code></pre></div>
+
+<h3 id="loading-a-module">Loading a Module<a class="headerlink" href="#loading-a-module" title="Permanent link">&para;</a></h3>
+<p>Once you know the module name, load it into your environment:</p>
+<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>gcc/12.1.0
+</code></pre></div>
+
+<p>List what is currently active with:</p>
+<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>list
+</code></pre></div>
+
+<p>Reset your environment and unload all modules with <code>module purge</code>.</p>
+<h3 id="checking-the-module-system-version">Checking the Module System Version<a class="headerlink" href="#checking-the-module-system-version" title="Permanent link">&para;</a></h3>
+<p>To see the installed Lmod version run:</p>
+<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>--version
+</code></pre></div>
+
+<p>More details and examples can be found in the <a href="../slurm/environment/">Environment Setup guide</a>.</p>
 
 
 
@@ -594,7 +632,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:21:11 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:52:19 UTC">July 5, 2025</span>
   </span>
 
     
