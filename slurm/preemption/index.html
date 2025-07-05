@@ -20,13 +20,13 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/environment/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/preemption/">
       
       
-        <link rel="prev" href="../accessing/">
+        <link rel="prev" href="../job-management/">
       
       
-        <link rel="next" href="../batch-jobs/">
+        <link rel="next" href="../storage/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -34,7 +34,7 @@
     
     
       
-        <title>Environment Setup - Cluster Documentation</title>
+        <title>Preemption - Cluster Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#environment-setup" class="md-skip">
+        <a href="#preemption" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Environment Setup
+              Preemption
             
           </span>
         </div>
@@ -432,32 +432,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Environment Setup
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../environment/" class="md-nav__link">
         
   
   
@@ -468,44 +446,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loading-modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loading Modules
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#virtual-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Virtual Environments
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -630,10 +570,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../preemption/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Preemption
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -644,6 +606,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-preempt-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Preempt Jobs?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-preemption-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Preemption Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submitting-preemptible-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submitting Preemptible Jobs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-on-your-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect on Your Job
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#good-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Good Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1083,34 +1110,42 @@
   
 
 
-<h1 id="environment-setup">Environment Setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h1>
-<p>The cluster uses environment modules to manage compilers, MPI libraries
-and application software. Modules allow you to easily switch between
-different versions of tools without altering your shell configuration.</p>
-<h3 id="loading-modules">Loading Modules<a class="headerlink" href="#loading-modules" title="Permanent link">&para;</a></h3>
-<p>View available modules with:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>avail
+<h1 id="preemption">Preemption<a class="headerlink" href="#preemption" title="Permanent link">&para;</a></h1>
+<p>Preemption allows high priority jobs to run by pausing or terminating running low priority jobs. It is typically enabled on a dedicated partition or for jobs marked as preemptible.</p>
+<h3 id="why-preempt-jobs">Why Preempt Jobs?<a class="headerlink" href="#why-preempt-jobs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ensure urgent computations start quickly when resources are scarce.</li>
+<li>Keep hardware free for high priority workloads.</li>
+<li>Allow opportunistic jobs to use idle resources without delaying critical work.</li>
+</ul>
+<h3 id="how-preemption-works">How Preemption Works<a class="headerlink" href="#how-preemption-works" title="Permanent link">&para;</a></h3>
+<p>When a high priority job is scheduled and resources are unavailable, Slurm may preempt running jobs with lower priority. Depending on cluster configuration:</p>
+<ul>
+<li>The job may be requeued and restarted later when resources free up.</li>
+<li>The job may be canceled entirely.</li>
+</ul>
+<p>Preempted jobs that are requeued will start from the beginning unless your application supports checkpointing.</p>
+<h3 id="submitting-preemptible-jobs">Submitting Preemptible Jobs<a class="headerlink" href="#submitting-preemptible-jobs" title="Permanent link">&para;</a></h3>
+<p>Check available partitions with <code>sinfo</code>. Many clusters provide a partition named <code>preempt</code> (or similar) for jobs that can be interrupted.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">#SBATCH --partition=preempt</span>
+<span class="c1">#SBATCH --requeue       # allow Slurm to requeue the job when preempted</span>
 </code></pre></div>
 
-<p>List currently loaded modules with <code>module list</code> and reset your
-environment using <code>module purge</code> if needed.</p>
-<p>Load a compiler or application module, for example:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>gcc/12.1.0
-module<span class="w"> </span>load<span class="w"> </span>openmpi
-</code></pre></div>
-
-<h3 id="virtual-environments">Virtual Environments<a class="headerlink" href="#virtual-environments" title="Permanent link">&para;</a></h3>
-<p>To create a Python virtual environment for your own software stack:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>python
-python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/envs/myenv
-<span class="nb">source</span><span class="w"> </span>~/envs/myenv/bin/activate
-</code></pre></div>
-
-<p>Install packages as needed in the activated environment.</p>
-<p>For a Conda-based workflow using Mamba or Anaconda, see
-<a href="../mamba-anaconda/">Mamba/Anaconda Environments</a>.</p>
-<p>See the <a href="https://lmod.readthedocs.io/en/latest/">Lmod documentation</a> for
-more module commands and examples.</p>
+<p>Submit your script with <code>sbatch job.sh</code>. Use <code>squeue</code> to monitor status. Jobs in the preemptible partition may run immediately but can be stopped when resources are required elsewhere.</p>
+<h3 id="effect-on-your-job">Effect on Your Job<a class="headerlink" href="#effect-on-your-job" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Execution may stop at any time if a higher priority job needs the resources.</li>
+<li>If <code>--requeue</code> was set and the partition allows it, the job is placed back in the queue and will restart from the beginning once resources are free.</li>
+<li>If not requeued, the job will be canceled and you must resubmit it manually.</li>
+</ul>
+<h3 id="good-use-cases">Good Use Cases<a class="headerlink" href="#good-use-cases" title="Permanent link">&para;</a></h3>
+<p>Preemptible partitions are ideal for:</p>
+<ul>
+<li>Long, low-priority simulations that do not need to finish quickly.</li>
+<li>Opportunistic data analysis or testing that can be restarted.</li>
+<li>Workloads with built-in checkpointing or frequent save points.</li>
+</ul>
+<p>Using preemptible resources lets you take advantage of otherwise idle hardware while ensuring that critical jobs are never delayed.</p>
 
 
 
@@ -1131,7 +1166,7 @@ more module commands and examples.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:58:03 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:18:33 UTC">July 5, 2025</span>
   </span>
 
     

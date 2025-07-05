@@ -29,6 +29,10 @@
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>
+         <loc>https://wit543.github.io/cluster-doc/user-registration/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
          <loc>https://wit543.github.io/cluster-doc/scripts/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
@@ -78,6 +82,10 @@
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/overview/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://wit543.github.io/cluster-doc/slurm/preemption/</loc>
          <lastmod>2025-07-05</lastmod>
     </url>
     <url>

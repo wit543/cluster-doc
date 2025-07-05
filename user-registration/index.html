@@ -20,28 +20,28 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/environment/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/user-registration/">
       
       
-        <link rel="prev" href="../accessing/">
+        <link rel="prev" href="../tools/file-transfer/">
       
       
-        <link rel="next" href="../batch-jobs/">
+        <link rel="next" href="../tools/ssh-tunneling/">
       
       
-      <link rel="icon" href="../../images/favicon.png">
+      <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Environment Setup - Cluster Documentation</title>
+        <title>User Registration - Cluster Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -60,9 +60,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#environment-setup" class="md-skip">
+        <a href="#user-registration-and-ssh-key-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -111,9 +111,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Cluster Documentation" class="md-header__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
+    <a href=".." title="Cluster Documentation" class="md-header__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
       
-  <img src="../../images/logo_vistec.png" alt="logo">
+  <img src="../images/logo_vistec.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Environment Setup
+              User Registration
             
           </span>
         </div>
@@ -270,9 +270,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Cluster Documentation" class="md-nav__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
+    <a href=".." title="Cluster Documentation" class="md-nav__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
       
-  <img src="../../images/logo_vistec.png" alt="logo">
+  <img src="../images/logo_vistec.png" alt="logo">
 
     </a>
     Cluster Documentation
@@ -299,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -318,8 +318,6 @@
       
   
   
-    
-  
   
   
     
@@ -332,11 +330,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -352,7 +350,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Slurm Basics
@@ -366,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slurm-basics/" class="md-nav__link">
+      <a href="../slurm-basics/" class="md-nav__link">
         
   
   
@@ -389,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../slurm/overview/" class="md-nav__link">
         
   
   
@@ -412,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing/" class="md-nav__link">
+      <a href="../slurm/accessing/" class="md-nav__link">
         
   
   
@@ -432,32 +430,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Environment Setup
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../slurm/environment/" class="md-nav__link">
         
   
   
@@ -468,44 +444,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loading-modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loading Modules
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#virtual-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Virtual Environments
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -518,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../batch-jobs/" class="md-nav__link">
+      <a href="../slurm/batch-jobs/" class="md-nav__link">
         
   
   
@@ -541,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../interactive-jobs/" class="md-nav__link">
+      <a href="../slurm/interactive-jobs/" class="md-nav__link">
         
   
   
@@ -564,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../interactive-sessions/" class="md-nav__link">
+      <a href="../slurm/interactive-sessions/" class="md-nav__link">
         
   
   
@@ -587,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mpi-multinode/" class="md-nav__link">
+      <a href="../slurm/mpi-multinode/" class="md-nav__link">
         
   
   
@@ -610,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-management/" class="md-nav__link">
+      <a href="../slurm/job-management/" class="md-nav__link">
         
   
   
@@ -633,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../preemption/" class="md-nav__link">
+      <a href="../slurm/preemption/" class="md-nav__link">
         
   
   
@@ -656,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/" class="md-nav__link">
+      <a href="../slurm/storage/" class="md-nav__link">
         
   
   
@@ -679,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../helpful-commands/" class="md-nav__link">
+      <a href="../slurm/helpful-commands/" class="md-nav__link">
         
   
   
@@ -702,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../help/" class="md-nav__link">
+      <a href="../slurm/help/" class="md-nav__link">
         
   
   
@@ -725,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../qos-policy/" class="md-nav__link">
+      <a href="../slurm/qos-policy/" class="md-nav__link">
         
   
   
@@ -755,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux-basics/" class="md-nav__link">
+      <a href="../linux-basics/" class="md-nav__link">
         
   
   
@@ -777,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slurm-basics/" class="md-nav__link">
+      <a href="../slurm-basics/" class="md-nav__link">
         
   
   
@@ -799,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ist-cluster/" class="md-nav__link">
+      <a href="../ist-cluster/" class="md-nav__link">
         
   
   
@@ -821,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         
   
   
@@ -843,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../apptainer/" class="md-nav__link">
+      <a href="../apptainer/" class="md-nav__link">
         
   
   
@@ -865,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../singularity/" class="md-nav__link">
+      <a href="../singularity/" class="md-nav__link">
         
   
   
@@ -887,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/editors-and-tmux/" class="md-nav__link">
+      <a href="../tools/editors-and-tmux/" class="md-nav__link">
         
   
   
@@ -909,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/file-transfer/" class="md-nav__link">
+      <a href="../tools/file-transfer/" class="md-nav__link">
         
   
   
@@ -928,10 +866,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../user-registration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    User Registration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -942,6 +902,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#determine-the-username" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determine the Username
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-an-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate an SSH Key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-the-public-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install the Public Key
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -953,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/ssh-tunneling/" class="md-nav__link">
+      <a href="../tools/ssh-tunneling/" class="md-nav__link">
         
   
   
@@ -1018,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scripts/" class="md-nav__link">
+      <a href="../scripts/" class="md-nav__link">
         
   
   
@@ -1041,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scripts/sinfo-to-page/" class="md-nav__link">
+      <a href="../scripts/sinfo-to-page/" class="md-nav__link">
         
   
   
@@ -1083,34 +1099,40 @@
   
 
 
-<h1 id="environment-setup">Environment Setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h1>
-<p>The cluster uses environment modules to manage compilers, MPI libraries
-and application software. Modules allow you to easily switch between
-different versions of tools without altering your shell configuration.</p>
-<h3 id="loading-modules">Loading Modules<a class="headerlink" href="#loading-modules" title="Permanent link">&para;</a></h3>
-<p>View available modules with:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>avail
+<h1 id="user-registration-and-ssh-key-setup">User Registration and SSH Key Setup<a class="headerlink" href="#user-registration-and-ssh-key-setup" title="Permanent link">&para;</a></h1>
+<p>This page describes how administrators register a new user and install the user's SSH key on the cluster.</p>
+<h2 id="determine-the-username">Determine the Username<a class="headerlink" href="#determine-the-username" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Start with the user's first name followed by the first letter of the last name. For example, <code>Jane Doe</code> becomes <code>janed</code>.</li>
+<li>If a username already exists, append a number until you find an unused name: <code>janed2</code>, <code>janed3</code>, and so on.</li>
+<li>For interns add <code>_inter</code> to the end, e.g. <code>janed_inter</code>. For guests use <code>_guest</code>.</li>
+</ol>
+<h2 id="create-the-account">Create the Account<a class="headerlink" href="#create-the-account" title="Permanent link">&para;</a></h2>
+<p>Run the following commands as root:</p>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>&lt;username&gt;
+sudo<span class="w"> </span>passwd<span class="w"> </span>&lt;username&gt;
 </code></pre></div>
 
-<p>List currently loaded modules with <code>module list</code> and reset your
-environment using <code>module purge</code> if needed.</p>
-<p>Load a compiler or application module, for example:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>gcc/12.1.0
-module<span class="w"> </span>load<span class="w"> </span>openmpi
+<p>This creates the home directory and prompts for an initial password.</p>
+<h2 id="generate-an-ssh-key">Generate an SSH Key<a class="headerlink" href="#generate-an-ssh-key" title="Permanent link">&para;</a></h2>
+<p>Ask the new user to create an SSH key pair on their workstation:</p>
+<div class="codehilite"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;&lt;email&gt;&quot;</span>
 </code></pre></div>
 
-<h3 id="virtual-environments">Virtual Environments<a class="headerlink" href="#virtual-environments" title="Permanent link">&para;</a></h3>
-<p>To create a Python virtual environment for your own software stack:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>python
-python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/envs/myenv
-<span class="nb">source</span><span class="w"> </span>~/envs/myenv/bin/activate
+<p>The user should send the resulting <code>id_ed25519.pub</code> file to the administrator.</p>
+<h2 id="install-the-public-key">Install the Public Key<a class="headerlink" href="#install-the-public-key" title="Permanent link">&para;</a></h2>
+<p>Switch to the new account and set up the <code>.ssh</code> folder:</p>
+<div class="codehilite"><pre><span></span><code>su<span class="w"> </span>-<span class="w"> </span>&lt;username&gt;
+mkdir<span class="w"> </span>-m<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh
+cat<span class="w"> </span>/path/to/id_ed25519.pub<span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.ssh/authorized_keys
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.ssh/authorized_keys
 </code></pre></div>
 
-<p>Install packages as needed in the activated environment.</p>
-<p>For a Conda-based workflow using Mamba or Anaconda, see
-<a href="../mamba-anaconda/">Mamba/Anaconda Environments</a>.</p>
-<p>See the <a href="https://lmod.readthedocs.io/en/latest/">Lmod documentation</a> for
-more module commands and examples.</p>
+<p>Ensure the directory and file are owned by the user:</p>
+<div class="codehilite"><pre><span></span><code>chown<span class="w"> </span>-R<span class="w"> </span>&lt;username&gt;:&lt;username&gt;<span class="w"> </span>~/.ssh
+</code></pre></div>
+
+<p>The user can now log in using their private key. Keep the private key secure and never share it with others.</p>
 
 
 
@@ -1131,7 +1153,7 @@ more module commands and examples.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:58:03 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:19:11 UTC">July 5, 2025</span>
   </span>
 
     
@@ -1195,14 +1217,14 @@ more module commands and examples.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "toc.integrate", "search.suggest", "sitemap"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "toc.integrate", "search.suggest", "sitemap"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../javascripts/accessibility.js"></script>
+        <script src="../javascripts/accessibility.js"></script>
       
-        <script src="../../javascripts/load-qos.js"></script>
+        <script src="../javascripts/load-qos.js"></script>
       
     
   </body>
