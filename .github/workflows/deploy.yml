@@ -17,7 +17,7 @@ jobs:
       - name: Record sinfo demo
         run: terminalizer record docs/scripts/sinfo-demo -d "bash docs/scripts/demo_sinfo.sh"
       - name: Render gif
-        run: terminalizer render docs/scripts/sinfo-demo.yml -o docs/images/sinfo-demo
+        run: script -q -c 'terminalizer record docs/scripts/sinfo-demo --command "bash docs/scripts/demo_sinfo.sh" --force' /dev/null
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
