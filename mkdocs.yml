@@ -108,6 +108,10 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/wit543/cluster-doc
 
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
 
 extra_css:
   - stylesheets/extra.css
