@@ -25,6 +25,7 @@ nav:
   - Singularity: singularity.md
   - Editors and Tmux: tools/editors-and-tmux.md
   - File Transfer: tools/file-transfer.md
+  - User Registration: user-registration.md
   - SSH Tunneling: tools/ssh-tunneling.md
   - Scripts:
       - scripts/index.md
