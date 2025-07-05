@@ -1,7 +1,7 @@
 site_name: Cluster Documentation
 site_description: Documentation for normal users and system admins
-site_url: https://example.com/cluster-doc
-repo_url: https://github.com/example/cluster-doc
+site_url: https://wit543.github.io/cluster-doc/
+repo_url: https://github.com/wit543/cluster-doc
 
 nav:
   - Home: index.md
@@ -13,7 +13,7 @@ nav:
 theme:
   name: material
   custom_dir: docs/overrides
-  logo: images/logo.png
+  logo: images/logo_vistec.png
   favicon: images/favicon.png
   language: en
   features:
@@ -76,7 +76,7 @@ extra_templates:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/example/cluster-doc
+      link: https://github.com/wit543/cluster-doc
 
 
 extra_css:
