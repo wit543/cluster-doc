@@ -28,6 +28,7 @@ nav:
   - SSH Tunneling: tools/ssh-tunneling.md
   - Scripts:
       - scripts/index.md
+      - Convert sinfo output: scripts/sinfo-to-page.md
 
 theme:
   name: material
