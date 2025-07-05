@@ -1,0 +1,17 @@
+# Helpful Commands
+
+### Slurm Utilities
+
+- `sinfo` – view available partitions and nodes
+- `scontrol show job <jobid>` – detailed job information
+- `squeue -l` – extended job listing
+
+Use `sinfo` frequently to check which partitions are available. The
+official man page provides a full description of its output at
+[slurm.schedmd.com/sinfo.html](https://slurm.schedmd.com/sinfo.html).
+
+### Troubleshooting Tips
+
+Check your job's output and error files if it fails to run. The command
+`scontrol show job <jobid>` often provides clues about resource or
+configuration issues.
