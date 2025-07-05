@@ -11,6 +11,7 @@ nav:
   - Using Modules: modules.md
   - Apptainer: apptainer.md
   - Singularity: singularity.md
+  - Editors and Tmux: tools/editors-and-tmux.md
   - Scripts:
       - scripts/index.md
 
