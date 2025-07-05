@@ -2,16 +2,17 @@
 
 ### Viewing Jobs
 
-See your queued or running jobs with:
+See your queued or running jobs with either `squeue -u $USER` or the shorthand
+`squeue --me`:
 
 ```bash
-squeue -u $USER
+squeue --me
 ```
 Add `-p <partition>` to filter by partition. Refer to the
 [squeue documentation](https://slurm.schedmd.com/squeue.html) for more
 options.
 
-A typical `squeue` table looks like this:
+The output lists job identifiers, partitions, job names, states, and more:
 
 ```
  JOBID PARTITION     NAME     USER ST  TIME  NODES NODELIST(REASON)
@@ -51,7 +52,21 @@ You can cancel all of your jobs with `scancel -u $USER`. See the
 [scancel documentation](https://slurm.schedmd.com/scancel.html) for
 additional usage details.
 
-### Viewing Job Priority
+
+### Job Priority
+
+The scheduler decides which jobs start first based on priority. Display the
+priority of your queued jobs with:
+
+```bash
+squeue --me -o "%i %9Q %t %M %j"
+```
+
+`%Q` shows the numeric priority assigned to each job. Higher values run
+sooner. For a more detailed breakdown of how priority is calculated, use
+`sprio` and consult the
+[Slurm scheduling documentation](https://slurm.schedmd.com/sprio.html).
+
 
 Check a job's priority with:
 
@@ -61,3 +76,4 @@ sprio -j <jobid>
 For more detail, run `scontrol show job <jobid>` and look for the `Priority` field.
 Slurm calculates priority from factors such as fairshare, job age, and QOS.
 See the [priority overview](https://slurm.schedmd.com/job_prio.html) on the Slurm website for an explanation of how it works.
+
