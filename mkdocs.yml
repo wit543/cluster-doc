@@ -5,7 +5,17 @@ repo_url: https://github.com/wit543/cluster-doc
 
 nav:
   - Home: index.md
-  - Slurm Basics: slurm-basics.md
+  - Slurm Basics:
+      - slurm-basics.md
+      - Overview: slurm/overview.md
+      - Accessing the Cluster: slurm/accessing.md
+      - Environment Setup: slurm/environment.md
+      - Submitting Batch Jobs: slurm/batch-jobs.md
+      - Running Interactive Jobs: slurm/interactive-jobs.md
+      - Monitoring and Managing Jobs: slurm/job-management.md
+      - Storage and File Systems: slurm/storage.md
+      - Helpful Commands: slurm/helpful-commands.md
+      - Getting Help: slurm/help.md
   - IST-CLUSTER Guide: ist-cluster.md
   - Using Modules: modules.md
   - Apptainer: apptainer.md
