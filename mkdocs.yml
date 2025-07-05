@@ -16,10 +16,13 @@ nav:
       - Storage and File Systems: slurm/storage.md
       - Helpful Commands: slurm/helpful-commands.md
       - Getting Help: slurm/help.md
+  - Linux Basics: linux-basics.md
+  - Slurm Basics: slurm-basics.md
   - IST-CLUSTER Guide: ist-cluster.md
   - Using Modules: modules.md
   - Apptainer: apptainer.md
   - Singularity: singularity.md
+  - Editors and Tmux: tools/editors-and-tmux.md
   - Scripts:
       - scripts/index.md
 
