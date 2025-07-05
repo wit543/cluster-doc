@@ -14,6 +14,7 @@ nav:
       - Running Interactive Jobs: slurm/interactive-jobs.md
       - MPI and Multi-node Jobs: slurm/mpi-multinode.md
       - Monitoring and Managing Jobs: slurm/job-management.md
+      - Preemption: slurm/preemption.md
       - Storage and File Systems: slurm/storage.md
       - Helpful Commands: slurm/helpful-commands.md
       - Getting Help: slurm/help.md
