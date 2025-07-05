@@ -15,7 +15,7 @@ jobs:
       - name: Install terminalizer
         run: npm install -g terminalizer
       - name: Record sinfo demo
-        run: terminalizer record docs/scripts/sinfo-demo -c "bash docs/scripts/demo_sinfo.sh" --force
+        run: script -q -c 'terminalizer record docs/scripts/sinfo-demo --command "bash docs/scripts/demo_sinfo.sh" --force' /dev/null
       - name: Render gif
         run: terminalizer render docs/scripts/sinfo-demo.yml -o docs/images/sinfo-demo
       - uses: actions/setup-python@v4
