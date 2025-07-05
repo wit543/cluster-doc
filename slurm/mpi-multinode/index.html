@@ -20,28 +20,28 @@
       
       
       
-        <link rel="canonical" href="https://wit543.github.io/cluster-doc/singularity/">
+        <link rel="canonical" href="https://wit543.github.io/cluster-doc/slurm/mpi-multinode/">
       
       
-        <link rel="prev" href="../apptainer/">
+        <link rel="prev" href="../interactive-jobs/">
       
       
-        <link rel="next" href="../tools/editors-and-tmux/">
+        <link rel="next" href="../job-management/">
       
       
-      <link rel="icon" href="../images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Singularity - Cluster Documentation</title>
+        <title>MPI and Multi-node Jobs - Cluster Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -60,9 +60,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#singularity-containers" class="md-skip">
+        <a href="#mpi-and-multi-node-jobs" class="md-skip">
           Skip to content
         </a>
       
@@ -111,9 +111,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Cluster Documentation" class="md-header__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
+    <a href="../.." title="Cluster Documentation" class="md-header__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
       
-  <img src="../images/logo_vistec.png" alt="logo">
+  <img src="../../images/logo_vistec.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Singularity
+              MPI and Multi-node Jobs
             
           </span>
         </div>
@@ -270,9 +270,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Cluster Documentation" class="md-nav__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
+    <a href="../.." title="Cluster Documentation" class="md-nav__button md-logo" aria-label="Cluster Documentation" data-md-component="logo">
       
-  <img src="../images/logo_vistec.png" alt="logo">
+  <img src="../../images/logo_vistec.png" alt="logo">
 
     </a>
     Cluster Documentation
@@ -299,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -318,8 +318,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -330,11 +332,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -350,7 +352,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Slurm Basics
@@ -364,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm-basics/" class="md-nav__link">
+      <a href="../../slurm-basics/" class="md-nav__link">
         
   
   
@@ -387,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -410,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/accessing/" class="md-nav__link">
+      <a href="../accessing/" class="md-nav__link">
         
   
   
@@ -433,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/environment/" class="md-nav__link">
+      <a href="../environment/" class="md-nav__link">
         
   
   
@@ -456,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/batch-jobs/" class="md-nav__link">
+      <a href="../batch-jobs/" class="md-nav__link">
         
   
   
@@ -479,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/interactive-jobs/" class="md-nav__link">
+      <a href="../interactive-jobs/" class="md-nav__link">
         
   
   
@@ -499,10 +501,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../slurm/mpi-multinode/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MPI and Multi-node Jobs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -513,6 +537,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loading-an-mpi-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loading an MPI Module
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-batch-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Batch Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-mpirun" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running mpirun
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -525,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/job-management/" class="md-nav__link">
+      <a href="../job-management/" class="md-nav__link">
         
   
   
@@ -548,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   
@@ -571,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/helpful-commands/" class="md-nav__link">
+      <a href="../helpful-commands/" class="md-nav__link">
         
   
   
@@ -594,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm/help/" class="md-nav__link">
+      <a href="../help/" class="md-nav__link">
         
   
   
@@ -624,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux-basics/" class="md-nav__link">
+      <a href="../../linux-basics/" class="md-nav__link">
         
   
   
@@ -646,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slurm-basics/" class="md-nav__link">
+      <a href="../../slurm-basics/" class="md-nav__link">
         
   
   
@@ -668,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ist-cluster/" class="md-nav__link">
+      <a href="../../ist-cluster/" class="md-nav__link">
         
   
   
@@ -690,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
+      <a href="../../modules/" class="md-nav__link">
         
   
   
@@ -712,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apptainer/" class="md-nav__link">
+      <a href="../../apptainer/" class="md-nav__link">
         
   
   
@@ -731,32 +802,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Singularity
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../singularity/" class="md-nav__link">
         
   
   
@@ -767,62 +816,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loading-the-singularity-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loading the Singularity Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#downloading-an-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Downloading an Image
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-the-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using the Image
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-custom-images" class="md-nav__link">
-    <span class="md-ellipsis">
-      Building Custom Images
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -834,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/editors-and-tmux/" class="md-nav__link">
+      <a href="../../tools/editors-and-tmux/" class="md-nav__link">
         
   
   
@@ -856,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/file-transfer/" class="md-nav__link">
+      <a href="../../tools/file-transfer/" class="md-nav__link">
         
   
   
@@ -921,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scripts/" class="md-nav__link">
+      <a href="../../scripts/" class="md-nav__link">
         
   
   
@@ -963,30 +956,50 @@
   
 
 
-<h1 id="singularity-containers">Singularity Containers<a class="headerlink" href="#singularity-containers" title="Permanent link">&para;</a></h1>
-<p>Singularity was the original name of Apptainer. Many clusters still ship the command as <code>singularity</code>.</p>
-<h3 id="loading-the-singularity-module">Loading the Singularity Module<a class="headerlink" href="#loading-the-singularity-module" title="Permanent link">&para;</a></h3>
-<p>If available, load it like any other module:</p>
-<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>singularity
+<h1 id="mpi-and-multi-node-jobs">MPI and Multi-node Jobs<a class="headerlink" href="#mpi-and-multi-node-jobs" title="Permanent link">&para;</a></h1>
+<p>Many parallel applications use the Message Passing Interface (MPI) to
+communicate across multiple tasks or nodes. The cluster provides
+OpenMPI modules so you can run distributed workloads through Slurm.</p>
+<h2 id="loading-an-mpi-module">Loading an MPI Module<a class="headerlink" href="#loading-an-mpi-module" title="Permanent link">&para;</a></h2>
+<p>Load a compiler and MPI library before compiling or running your
+programs:</p>
+<div class="codehilite"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>gcc/12.1.0
+module<span class="w"> </span>load<span class="w"> </span>openmpi
 </code></pre></div>
 
-<h3 id="downloading-an-image">Downloading an Image<a class="headerlink" href="#downloading-an-image" title="Permanent link">&para;</a></h3>
-<p>Images can be pulled from remote registries or local paths. For example:</p>
-<div class="codehilite"><pre><span></span><code>singularity<span class="w"> </span>pull<span class="w"> </span>alpine.sif<span class="w"> </span>docker://alpine:latest
+<h2 id="example-batch-script">Example Batch Script<a class="headerlink" href="#example-batch-script" title="Permanent link">&para;</a></h2>
+<p>The following script requests two nodes with four MPI tasks per node
+and runs <code>mpi_hello</code> using <code>srun</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1">#SBATCH --job-name=mpi_test</span>
+<span class="c1">#SBATCH --partition=general</span>
+<span class="c1">#SBATCH --nodes=2</span>
+<span class="c1">#SBATCH --ntasks-per-node=4</span>
+<span class="c1">#SBATCH --time=00:10:00</span>
+<span class="c1">#SBATCH --output=slurm-%j.out</span>
+
+srun<span class="w"> </span>./mpi_hello
 </code></pre></div>
 
-<h3 id="using-the-image">Using the Image<a class="headerlink" href="#using-the-image" title="Permanent link">&para;</a></h3>
-<p>Run a shell inside the container or execute a specific program:</p>
-<div class="codehilite"><pre><span></span><code>singularity<span class="w"> </span>shell<span class="w"> </span>alpine.sif
-singularity<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>alpine.sif<span class="w"> </span>cat<span class="w"> </span>/etc/os-release
+<p>Submit the script with <code>sbatch mpi_job.sh</code>. Slurm allocates two nodes
+and launches a total of eight tasks.</p>
+<h2 id="running-mpirun">Running mpirun<a class="headerlink" href="#running-mpirun" title="Permanent link">&para;</a></h2>
+<p>You can also use <code>mpirun</code> provided by OpenMPI. Slurm automatically
+provides the host list so a typical command inside the job script is:</p>
+<div class="codehilite"><pre><span></span><code>mpirun<span class="w"> </span>./mpi_hello
 </code></pre></div>
 
-<h3 id="building-custom-images">Building Custom Images<a class="headerlink" href="#building-custom-images" title="Permanent link">&para;</a></h3>
-<p>With a definition file you can create your own container:</p>
-<div class="codehilite"><pre><span></span><code>singularity<span class="w"> </span>build<span class="w"> </span>custom.sif<span class="w"> </span>Singularity.def
+<p>For hybrid MPI and OpenMP programs, specify the number of MPI tasks and
+threads. For example, to run four tasks per node with two threads each:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">#SBATCH --nodes=2</span>
+<span class="c1">#SBATCH --ntasks-per-node=4</span>
+<span class="c1">#SBATCH --cpus-per-task=2</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="nv">$SLURM_CPUS_PER_TASK</span>
+srun<span class="w"> </span>./hybrid_app
 </code></pre></div>
 
-<p>Refer to the <a href="https://sylabs.io/guides/">Singularity documentation</a> for a complete walkthrough of advanced features and configuration options.</p>
+<p>This configuration launches eight MPI tasks in total with two OpenMP
+threads per task across the allocated nodes.</p>
 
 
 
@@ -1007,7 +1020,7 @@ singularity<span class="w"> </span><span class="nb">exec</span><span class="w"> 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:52:19 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:04:39 UTC">July 5, 2025</span>
   </span>
 
     
@@ -1071,12 +1084,12 @@ singularity<span class="w"> </span><span class="nb">exec</span><span class="w"> 
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "toc.integrate", "search.suggest", "sitemap"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "toc.integrate", "search.suggest", "sitemap"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../javascripts/accessibility.js"></script>
+        <script src="../../javascripts/accessibility.js"></script>
       
     
   </body>
