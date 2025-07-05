@@ -41,6 +41,18 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+    - scheme: dracula
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/ghost
+        name: Switch to Dracula mode
+    - scheme: high-contrast
+      primary: black
+      accent: yellow
+      toggle:
+        icon: material/eye
+        name: Switch to high contrast mode
 
 markdown_extensions:
   - admonition
@@ -55,7 +67,8 @@ plugins:
   - git-revision-date-localized
   - minify
 
-extra_javascript: []
+extra_javascript:
+  - javascripts/accessibility.js
 
 extra_templates:
   - robots.txt
