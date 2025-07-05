@@ -1,6 +1,7 @@
 # Welcome to the Cluster Documentation
 
 This site provides documentation for both normal users and system administrators.
+Administrators can refer to the **Admin Guide** for details on setting up and maintaining the cluster.
 
 Use the navigation bar on the left to browse available topics. You can contribute updates through the integrated CMS or by editing Markdown files directly.
 
