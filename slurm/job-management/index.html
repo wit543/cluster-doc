@@ -626,6 +626,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#viewing-job-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Job Priority
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1101,6 +1110,19 @@
 <p>Add <code>-p &lt;partition&gt;</code> to filter by partition. Refer to the
 <a href="https://slurm.schedmd.com/squeue.html">squeue documentation</a> for more
 options.</p>
+<p>A typical <code>squeue</code> table looks like this:</p>
+<div class="codehilite"><pre><span></span><code> JOBID PARTITION     NAME     USER ST  TIME  NODES NODELIST(REASON)
+ 1234  general   myjob    alice  R  0:10      1   node01
+ 1235  general   myjob    alice  PD  0:00      1   (Priority)
+</code></pre></div>
+
+<p>The important columns are:</p>
+<ul>
+<li><strong>JOBID</strong> – the numeric identifier used with other commands</li>
+<li><strong>ST</strong> – the state of the job (<code>R</code> running, <code>PD</code> pending, <code>CG</code> completing, <code>CD</code> completed, <code>F</code> failed)</li>
+<li><strong>NODELIST(REASON)</strong> – either the node running the job or why it is waiting</li>
+</ul>
+<p>See the <a href="https://slurm.schedmd.com/squeue.html#SECTION_JOB-STATES">Slurm job states documentation</a> for the full list of codes.</p>
 <h3 id="job-history">Job History<a class="headerlink" href="#job-history" title="Permanent link">&para;</a></h3>
 <p>After a job finishes, view its history using:</p>
 <div class="codehilite"><pre><span></span><code>sacct<span class="w"> </span>-j<span class="w"> </span>&lt;jobid&gt;
@@ -1118,6 +1140,14 @@ options.</p>
 <p>You can cancel all of your jobs with <code>scancel -u $USER</code>. See the
 <a href="https://slurm.schedmd.com/scancel.html">scancel documentation</a> for
 additional usage details.</p>
+<h3 id="viewing-job-priority">Viewing Job Priority<a class="headerlink" href="#viewing-job-priority" title="Permanent link">&para;</a></h3>
+<p>Check a job's priority with:</p>
+<div class="codehilite"><pre><span></span><code>sprio<span class="w"> </span>-j<span class="w"> </span>&lt;jobid&gt;
+</code></pre></div>
+
+<p>For more detail, run <code>scontrol show job &lt;jobid&gt;</code> and look for the <code>Priority</code> field.
+Slurm calculates priority from factors such as fairshare, job age, and QOS.
+See the <a href="https://slurm.schedmd.com/job_prio.html">priority overview</a> on the Slurm website for an explanation of how it works.</p>
 
 
 
@@ -1138,7 +1168,7 @@ additional usage details.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 07:40:09 UTC">July 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 5, 2025 08:23:41 UTC">July 5, 2025</span>
   </span>
 
     
