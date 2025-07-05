@@ -48,6 +48,7 @@ theme:
     - navigation.sections
     - toc.integrate
     - search.suggest
+    - content.code.copy
     - sitemap
   icon:
     repo: fontawesome/brands/github
