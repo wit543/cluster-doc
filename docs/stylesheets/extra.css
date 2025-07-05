@@ -6,3 +6,47 @@
   --md-code-font: 'Fira Code', monospace;
 }
 
+/* Dracula color scheme */
+[data-md-color-scheme="dracula"] {
+  --md-hue: 275;
+  --md-primary-fg-color: #ff79c6;
+  --md-primary-bg-color: #282a36;
+  --md-accent-fg-color: #50fa7b;
+  --md-default-bg-color: #282a36;
+  --md-default-fg-color: #f8f8f2;
+}
+
+/* High contrast color scheme for accessibility */
+[data-md-color-scheme="high-contrast"] {
+  --md-primary-fg-color: #000000;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #ffff00;
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #000000;
+}
+
+/* Font size controls */
+html[data-font-size="large"] {
+  font-size: 112%;
+}
+
+html[data-font-size="xlarge"] {
+  font-size: 125%;
+}
+
+.font-size-controls {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--md-default-bg-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.font-size-controls button {
+  margin: 0 0.25rem;
+  font-size: 1rem;
+}
+

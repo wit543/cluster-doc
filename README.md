@@ -7,6 +7,8 @@ This repository contains the source for a documentation site built with **MkDocs
 - **Material for MkDocs** with placeholder logo and favicon
 - Support for both English and Thai fonts
 - Automatic dark mode that follows the system theme and a manual toggle in the header
+- Additional color schemes including a **Dracula** theme and a **High Contrast** theme for accessibility
+- Floating controls to increase or decrease the font size for easier reading
 - Search with syntax highlighting and code blocks
 
 - Sitemap and `robots.txt` automatically generated
