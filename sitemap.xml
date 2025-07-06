@@ -2,114 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wit543.github.io/cluster-doc/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/containers/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/ist-cluster/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/linux-basics/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/modules/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm-basics/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/user-registration/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/admin/slurm-setup/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/scripts/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/scripts/sinfo-to-page/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/accessing/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/batch-jobs/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/environment/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/help/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/helpful-commands/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/interactive-jobs/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/interactive-sessions/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/job-inspection/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/job-management/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/mamba-anaconda/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/mpi-multinode/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/overview/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/preemption/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/qos-policy/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/slurm/storage/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/tools/editors-and-tmux/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/tools/file-transfer/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://wit543.github.io/cluster-doc/tools/ssh-tunneling/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
 </urlset>
