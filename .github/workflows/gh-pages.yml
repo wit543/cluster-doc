@@ -1,9 +1,12 @@
 name: Deploy MkDocs
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Render GIF"]    # ← must exactly match name: of workflow A
+    types: [completed]           # fires when A completes (success or failure)
+  # push:
+  #   branches:
+  #     - main
 
 # grant the bot write access to code & pages
 permissions:
