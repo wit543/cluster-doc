@@ -32,12 +32,3 @@ jobs:
           xvfb-run -a terminalizer render docs/scripts/sinfo-demo \
             -o docs/images/sinfo-demo.gif
             
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - run: pip install -r requirements.txt
-      - name: Deploy
-        run: mkdocs gh-deploy --force
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
