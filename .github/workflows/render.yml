@@ -1,7 +1,7 @@
-name: Deploy Docs
+name: Render GIF
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
