@@ -14,14 +14,24 @@ jobs:
           node-version: 20
       - name: Install terminalizer
         run: npm install -g terminalizer
-      - name: Fix chrome sandbox permissions
+        
+      - name: Fix Chrome sandbox permissions
         run: |
           sudo chown root:root $(npm root -g)/terminalizer/node_modules/electron/dist/chrome-sandbox
-          sudo chmod 4755 $(npm root -g)/terminalizer/node_modules/electron/dist/chrome-sandbox
+          sudo chmod 4755    $(npm root -g)/terminalizer/node_modules/electron/dist/chrome-sandbox
+          
       - name: Record sinfo demo
-        run: script -q -c 'terminalizer record docs/scripts/sinfo-demo -d "bash docs/scripts/demo_sinfo.sh" -k' /dev/null
-      - name: Render gif
-        run: xvfb-run -a terminalizer render docs/scripts/sinfo-demo.yml -o docs/images/sinfo-demo
+        run: |
+          script -q -c \
+            'terminalizer record docs/scripts/sinfo-demo \
+              -d "bash docs/scripts/demo_sinfo.sh" \
+              -k' /dev/null
+
+      - name: Render GIF
+        run: |
+          xvfb-run -a terminalizer render docs/scripts/sinfo-demo \
+            -o docs/images/sinfo-demo.gif
+            
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
